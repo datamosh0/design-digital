@@ -1,0 +1,84 @@
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 0;
+  overflow-x: hidden;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.video-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  font-family: Helvetica;
+  color: #fff;
+}
+
+.bg-video {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.tek-video {
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+  width: 400px;
+  height: 400px;
+  padding-right: 4.25rem;
+  max-width: 80%;
+}
+canvas {
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+  height: 100vh;
+}
+.volume {
+  width: 120px;
+  z-index: 100;
+}
+.muteBtns {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.reject {
+  width: 50px;
+  right: 2rem;
+  position: relative;
+  display: none;
+}
+.hammer {
+  width: 75px;
+  display: none;
+  left: 4rem;
+  position: relative;
+}
+.click {
+  position: sticky;
+  z-index: 1000;
+  bottom: 200;
+  left: 50;
+}

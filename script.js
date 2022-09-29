@@ -249,10 +249,10 @@ let mute = document.querySelector(".mute");
 let unmute = document.querySelector(".unmute");
 let hammer = document.querySelector(".hammer");
 let reject = document.querySelector(".reject");
-
+let bgVideo = document.querySelector(".bg-video");
 unmute.addEventListener("click", function () {
-  console.log("clicked");
   audio.play();
+  if (bgVideo.paused) bgVideo.play();
   unmute.style.display = "none";
   mute.style.display = "inline";
   reject.style.display = "inline";
@@ -260,6 +260,7 @@ unmute.addEventListener("click", function () {
 });
 mute.addEventListener("click", function () {
   audio.pause();
+  bgVideo.pause();
   mute.style.display = "none";
   reject.style.display = "none";
   hammer.style.display = "none";

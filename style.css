@@ -15,6 +15,7 @@ body {
   font-size: 0;
   overflow-x: hidden;
   font-family: "Balsamiq Sans", cursive;
+  max-height: 100vh;
 }
 
 .video-overlay {

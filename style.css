@@ -12,11 +12,9 @@
 }
 body {
   margin: 0;
-  font-size: 0;
-  overflow-x: hidden;
-  font-family: "Balsamiq Sans", cursive;
   max-height: 100vh;
   overflow-y: hidden;
+  font-family: "Verdana";
 }
 
 .video-overlay {
@@ -45,8 +43,8 @@ body {
 
 .tek-video {
   position: absolute;
-  bottom: 70px;
-  left: 70px;
+  bottom: 10px;
+  left: 30px;
   width: 400px;
   height: 400px;
   padding-right: 4.25rem;
@@ -97,4 +95,31 @@ canvas {
   z-index: 1000;
   bottom: 200;
   left: 50;
+}
+
+.header {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: rgba(255, 255, 255, 0.402);
+  z-index: 1000;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  display: none;
+}
+
+.rhythm {
+  display: none;
+}
+.header:hover .link {
+  display: none;
+}
+.header:hover .rhythm {
+  display: inline;
+}
+
+.header a {
+  color: rgba(255, 255, 255, 0.977);
+  text-decoration: none;
 }

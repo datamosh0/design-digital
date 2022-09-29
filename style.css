@@ -36,7 +36,7 @@ body {
   width: 100%;
   min-height: 100%;
   /* transform: translateX(calc((100% - 100vw) / 2)); */
-  background-image: url("./bg-photo.avif");
+  background-image: url("./bg-photo.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center top;

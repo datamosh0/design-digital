@@ -33,9 +33,14 @@ body {
   right: 0;
   z-index: -1;
   bottom: 0;
-  min-width: 100%;
+  width: 100%;
   min-height: 100%;
-  transform: translateX(calc((100% - 100vw) / 2));
+  /* transform: translateX(calc((100% - 100vw) / 2)); */
+  background-image: url("./bg-photo.avif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 .tek-video {
@@ -48,7 +53,7 @@ body {
   max-width: 80%;
   display: inline;
 }
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 768px) {
   .tek-video {
     display: none;
   }

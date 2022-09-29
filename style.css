@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
   font-family: "Balsamiq Sans", cursive;
   max-height: 100vh;
+  overflow-y: hidden;
 }
 
 .video-overlay {
@@ -30,10 +31,11 @@ body {
 .bg-video {
   position: fixed;
   right: 0;
-  top: 0;
+  z-index: -1;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: -1;
+  transform: translateX(calc((100% - 100vw) / 2));
 }
 
 .tek-video {
@@ -44,9 +46,16 @@ body {
   height: 400px;
   padding-right: 4.25rem;
   max-width: 80%;
+  display: inline;
+}
+@media screen and (max-width: 590px) {
+  .tek-video {
+    display: none;
+  }
 }
 canvas {
   z-index: -1;
+  overflow-y: hidden;
 }
 
 .container {

@@ -14,21 +14,20 @@ a {
 }
 
 .hero {
-  font-size: clamp(40px, 10vw, 50px);
+  font-size: clamp(25px, 4vw, 25px);
   line-height: 1;
   display: inline-block;
   color: #fff;
   z-index: 2;
-  letter-spacing: 10px;
+  letter-spacing: 2px;
 
   /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 1px 3px);
 }
 @media screen and (max-width: 768px) {
   .hero {
-    font-size: clamp(25px, 5vw, 10px);
+    font-size: clamp(20px, 2vw, 20px);
     line-height: 0.5;
-    letter-spacing: 5px;
   }
 }
 

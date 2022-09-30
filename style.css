@@ -60,6 +60,14 @@ body {
 
   -webkit-appearance: none;
 }
+
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
 .tek-video {
   position: absolute;
   bottom: 10px;
@@ -119,10 +127,15 @@ canvas {
 .header {
   z-index: 1000;
   position: relative;
-  left: 2rem;
-  top: 2rem;
+  left: 1rem;
+  top: 1rem;
 }
-
+.header2 {
+  z-index: 1000;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
 .rhythm {
   display: none;
 }

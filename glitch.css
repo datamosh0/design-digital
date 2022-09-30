@@ -26,7 +26,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    font-size: clamp(40px, 10vw, 10px);
+    font-size: clamp(25px, 5vw, 10px);
     line-height: 0.5;
     letter-spacing: 5px;
   }

@@ -24,6 +24,13 @@ a {
   /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 1px 3px);
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    font-size: clamp(40px, 10vw, 10px);
+    line-height: 0.5;
+    letter-spacing: 5px;
+  }
+}
 
 .demo {
   height: 100px;

@@ -251,13 +251,11 @@ let hammer = document.querySelector(".hammer");
 let reject = document.querySelector(".reject");
 let bgVideo = document.querySelector(".bg-video");
 let audioElement = document.querySelector(".audioElement");
-let link = document.querySelector(".header");
 audioElement.addEventListener("ended", function () {
   mute.style.display = "none";
   reject.style.display = "none";
   hammer.style.display = "none";
   unmute.style.display = "inline";
-  link.style.display = "inline";
 });
 unmute.addEventListener("click", function () {
   audio.play();

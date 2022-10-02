@@ -154,3 +154,8 @@ canvas {
   color: rgba(255, 255, 255, 0.977);
   text-decoration: none;
 }
+
+#link2,
+#link3 {
+  display: none;
+}

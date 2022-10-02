@@ -276,12 +276,7 @@ mute.addEventListener("click", function () {
 
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
-const link3 = document.getElementById("link3");
 link1.addEventListener("click", () => {
   link1.style.display = "none";
   link2.style.display = "inline";
-});
-link2.addEventListener("click", () => {
-  link2.style.display = "none";
-  link3.style.display = "inline";
 });

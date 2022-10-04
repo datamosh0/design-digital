@@ -86,7 +86,7 @@ video::-webkit-media-controls-overlay-play-button {
   max-width: 80%;
   display: inline;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1508px) {
   .tek-video {
     display: none;
   }

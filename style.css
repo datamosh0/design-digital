@@ -78,8 +78,8 @@ video::-webkit-media-controls-overlay-play-button {
 }
 .tek-video {
   position: absolute;
-  bottom: 10px;
-  left: 30px;
+  bottom: -44px;
+  left: 160px;
   width: 400px;
   height: 400px;
   padding-right: 4.25rem;
